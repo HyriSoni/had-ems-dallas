@@ -140,9 +140,10 @@ footer {
 .google-form-container {
     background: #1c1c1c; /* Темный фон */
     padding: 20px;
-    width: 35%; /* Форма занимает 50% экрана по ширине */
-    height: 90vh; /* Высота контейнера на всю высоту экрана */
-    margin: 0 auto; /* Центрируем контейнер по горизонтали */
+    width: 100%; /* Убираем фиксированную ширину */
+    max-width: 800px; /* Максимальная ширина */
+    height: 80vh; /* Высота контейнера на 80% экрана */
+    margin: 0 auto; /* Центрируем контейнер */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8);
     border-radius: 10px; /* Скругленные углы */
     overflow: hidden; /* Убираем прокрутку внутри контейнера */
@@ -158,6 +159,7 @@ footer {
     border: none; /* Убираем рамку вокруг фрейма */
 }
 
+/* Логотип */
 .logo img {
     height: 50px; /* Задаем высоту логотипа */
     width: auto; /* Сохраняем пропорции изображения */
@@ -218,6 +220,7 @@ footer {
     font-weight: bold; /* Жирный текст */
 }
 
+/* Футер */
 footer {
     background-color: #121212;
     color: #e0e0e0;
@@ -245,4 +248,59 @@ footer a.discord-link {
 
 footer a.discord-link:hover {
     text-decoration: underline;
+}
+
+/* Медиа-запросы для мобильных устройств */
+
+/* На мобильных устройствах экран должен быть по ширине */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .logo {
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .info-box {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .apply form {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.9rem;
+    }
+
+    .google-form-container {
+        width: 90%;
+        height: 70vh;
+    }
+
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-category {
+        width: 80%; /* Карточки будут шире */
+    }
 }
