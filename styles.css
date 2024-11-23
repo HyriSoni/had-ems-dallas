@@ -1,0 +1,248 @@
+/* Основной стиль */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Темный фон */
+    color: #e0e0e0; /* Светлый текст */
+}
+
+header {
+    background: #1c1c1c; /* Темный хедер */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff5757; /* Красный логотип */
+}
+
+nav a {
+    color: #fff; /* Белый текст ссылок */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: #ff5757; /* Красный при наведении */
+}
+
+.section {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #ff5757; /* Красный акцент */
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #ff5757; /* Красный выделение */
+    font-weight: bold;
+}
+
+.info-box {
+    background: #222; /* Темно-серый блок */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 48%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+/* Форма */
+.apply form {
+    background: #1c1c1c; /* Темный фон формы */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #222; /* Темно-серый фон для полей */
+    color: #fff; /* Белый текст */
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ff5757; /* Красный при фокусе */
+    outline: none;
+}
+
+button {
+    background: #ff5757; /* Красный фон кнопки */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #ff3c3c; /* Более яркий красный при наведении */
+}
+
+footer {
+    background: #1c1c1c; /* Темный фон футера */
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Ссылка на Discord */
+.discord-link {
+    color: #57a6ff; /* Голубой текст ссылок Discord */
+    text-decoration: none;
+}
+
+.discord-link:hover {
+    text-decoration: underline;
+}
+
+/* Google Form Container */
+.google-form-container {
+    background: #1c1c1c; /* Темный фон */
+    padding: 20px;
+    width: 35%; /* Форма занимает 50% экрана по ширине */
+    height: 90vh; /* Высота контейнера на всю высоту экрана */
+    margin: 0 auto; /* Центрируем контейнер по горизонтали */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8);
+    border-radius: 10px; /* Скругленные углы */
+    overflow: hidden; /* Убираем прокрутку внутри контейнера */
+    display: flex;
+    justify-content: center; /* Центрируем содержимое */
+    align-items: center; /* Центрируем содержимое */
+}
+
+/* Iframe внутри контейнера */
+.google-form-container iframe {
+    width: 100%; /* Фрейм занимает всю ширину контейнера */
+    height: 100%; /* Фрейм занимает всю высоту контейнера */
+    border: none; /* Убираем рамку вокруг фрейма */
+}
+
+.logo img {
+    height: 50px; /* Задаем высоту логотипа */
+    width: auto; /* Сохраняем пропорции изображения */
+    display: block; /* Убираем лишние отступы */
+}
+
+/* Основной контейнер для раздела "Состав" */
+.team {
+    background: #1c1c1c; /* Фон секции */
+    padding: 30px 20px; /* Внутренние отступы */
+    border-radius: 10px; /* Закругление углов */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8); /* Тень */
+    margin: 20px auto; /* Отступы сверху и снизу, выравнивание по центру */
+    max-width: 900px; /* Максимальная ширина */
+}
+
+/* Контейнер для двух категорий */
+.team-container {
+    display: flex; /* Гибкий контейнер для горизонтального расположения */
+    flex-wrap: wrap; /* Если места недостаточно, элементы будут переноситься */
+    justify-content: space-around; /* Равномерное распределение элементов */
+    gap: 20px; /* Отступы между элементами */
+}
+
+/* Стиль для каждой категории */
+.team-category {
+    background: #222; /* Фон карточки категории */
+    padding: 20px; /* Внутренние отступы */
+    border-radius: 10px; /* Закругление углов */
+    width: 45%; /* Ширина карточки (относительно родителя) */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Тень карточки */
+}
+
+/* Заголовок категории */
+.team-category h2 {
+    color: #ff5757; /* Цвет текста */
+    font-size: 1.5rem; /* Размер шрифта */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+/* Убираем стандартные стили списка */
+.team-category ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем внутренние отступы */
+    margin: 0; /* Убираем внешние отступы */
+}
+
+/* Элементы списка */
+.team-category li {
+    margin: 10px 0; /* Отступы между элементами */
+    color: #e0e0e0; /* Цвет текста */
+    font-size: 1rem; /* Размер шрифта */
+}
+
+/* Выделение текста (например, имен) */
+.team-category .highlight {
+    color: #ff5757; /* Цвет выделения */
+    font-weight: bold; /* Жирный текст */
+}
+
+footer {
+    background-color: #121212;
+    color: #e0e0e0;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    border-top: 2px solid #333;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a.discord-link {
+    color: #57a6ff;
+    text-decoration: none;
+}
+
+footer a.discord-link:hover {
+    text-decoration: underline;
+}
